@@ -24,6 +24,10 @@ document.querySelector('.check').addEventListener
     document.querySelector('.message').textContent = 'No Number';
   } else if (guess == secretnumber) {
     document.querySelector('.message').textContent = 'Correct Number';
+
+    document.querySelector('body').style.backgroundColor = '#60b347';
+    document.querySelector('.number').style.width = '30rem';
+
   } else if (guess < secretnumber) {
     if(score > 0){
       document.querySelector('.message').textContent = 'number is too Low';
